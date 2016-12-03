@@ -1,41 +1,32 @@
-<div class="card-container">
-  <h1 x-large class="sample-content">Your Content Here</h1>
+<article class="body">
+    <div class="select-language">
+        <select placeholder="源" [(ngModel)]="language.from">
+            <option value="en">英文</option>
+            <option value="zh-CN">中文</option>
+        </select>
+        <button (click)="toggleFromAndTo()" class="translate-language-btn">
+            <img src="assets/img/ter.svg" alt="">
+        </button>
+        <select placeholder="目标" [(ngModel)]="language.to">
+            <option value="en">英文</option>
+            <option value="zh-CN">中文</option>
+        </select>
+    </div>
 
-  <div>
-    For material design components use the <a href="https://github.com/AngularClass/angular2-webpack-starter/tree/material2"><b>material2</b></a> branch
-  </div>
+    <div class="input-text">
+        <input [(ngModel)]="needTranlstate" placeholder="原来">
+        <button (click)="test($event)" class="search-btn">搜索</button>
+    </div>
 
-  <hr>
 
-  <div>
-    For hot module reloading run
-    <pre>npm run start:hmr</pre>
-  </div>
-
-  <hr>
-
-  <div>
-    <h4>Local State</h4>
-
-    <form (ngSubmit)="submitState(localState.value)" autocomplete="off">
-
-      <input
-        [value]="localState.value"
-        (input)="localState.value = $event.target.value"
-        placeholder="Submit Local State to App State"
-        autofocus>
-
-      <button md-raised-button color="primary">Submit Value</button>
-    </form>
-    <!--
-        <input type="text" [value]="localState.value" (input)="localState.value = $event.target.value" autofocus>
-        Rather than wiring up two-way data-binding ourselves with [value] and (input)
-        we can use Angular's [(ngModel)] syntax
-        <input type="text" name="textInput" [(ngModel)]="localState.value" autofocus>
-      -->
-
-    <pre>this.localState = {{ localState | json }}</pre>
-
-  </div>
-
-</div>
+    <div class="trans" *ngIf="translate">
+        <h4>翻译:</h4>
+        <div *ngIf="translate">
+            <span *ngFor="let item of translate.sentences">
+                {{item.trans}}
+            </span>
+        </div>
+    </div>
+    <br>
+    <a [href]="'http://translate.google.cn/?source=osdd#auto/' + language.to + '/' + needTranlstate" target="_blank">更多</a>
+</article>

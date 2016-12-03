@@ -145,7 +145,10 @@ module.exports = function (options) {
           test: /\.(jpg|png|gif)$/,
           use: 'file-loader'
         },
-
+        {
+          test: /\.scss$/,
+          use: ['to-string-loader', 'css-loader', 'sass-loader']
+        },
       ],
 
     },
@@ -207,7 +210,8 @@ module.exports = function (options) {
        */
       new CopyWebpackPlugin([
         { from: 'src/assets', to: 'assets' },
-        { from: 'src/meta'}
+        { from: 'src/meta'},
+        { from: 'src/meta/manifest.json', to: 'assets/manifest.json'}
       ]),
 
 

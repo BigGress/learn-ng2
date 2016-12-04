@@ -1,5 +1,6 @@
 import {
-    Component
+    Component,
+    ElementRef,
 } from '@angular/core';
 
 import {
@@ -15,6 +16,10 @@ import {
 import { Http } from "@angular/http";
 
 import { HomeService } from "./home.serve";
+
+import { languageData } from "./common/language";
+
+import { translateComponent } from "./Component/translate.component";
 
 @Component({
     // The selector is what angular internally uses
@@ -37,6 +42,9 @@ export class HomeComponent {
         from: "zh-CN",
         to: "en",
     }
+
+    languageData = languageData;
+
     // Set our default values
     localState = {
         value: ''
@@ -44,15 +52,18 @@ export class HomeComponent {
     needTranlstate: string = "";
 
     translate: any;
+
+    bodyEl: HTMLElement = document.body;
+
     // TypeScript public modifiers
     // private service: HomeService = new HomeService(this.http)
     constructor(
         public appState: AppState,
         public title: Title,
         public http: Http,
-        private service: HomeService
+        private service: HomeService,
+        private element: ElementRef
     ) {
-        console.log(this.http);
 
     }
 
@@ -64,11 +75,13 @@ export class HomeComponent {
     }
 
     test() {
-        // console.log(this.needTranlstate)
+        console.log(this.needTranlstate)
         this.service.sendSourceStr(this.needTranlstate, this.language.from, this.language.to)
             .subscribe((res) => {
                 console.log(res.json());
                 this.translate = res.json();
+
+                this.bodyEl.style.height = "180px";
             })
     }
 

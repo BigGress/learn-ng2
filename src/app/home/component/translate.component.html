@@ -1,0 +1,11 @@
+<article class="translate"
+         [@toggle]="state">
+    <h4>翻译:</h4>
+    <section class="tranlsate-box">
+        <span *ngFor="let item of sentences">
+            {{item.trans}}
+        </span>
+    </section>
+</article>
+
+<!--<button (click)="toggle()">test</button>-->

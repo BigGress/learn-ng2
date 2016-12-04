@@ -15,8 +15,11 @@ import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
 import { HomeComponent } from './home';
+import { translateComponent } from "./home/component/translate.component";
 import { NoContentComponent } from './no-content';
 import { XLarge } from './home/x-large';
+
+import { components } from "./component/index";
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -39,7 +42,9 @@ type StoreType = {
     AppComponent,
     HomeComponent,
     NoContentComponent,
-    XLarge
+    XLarge,
+    translateComponent,
+    ...components
   ],
   imports: [ // import Angular's modules
     BrowserModule,

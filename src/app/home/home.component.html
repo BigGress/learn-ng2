@@ -1,32 +1,37 @@
 <article class="body">
     <div class="select-language">
         <select placeholder="源" [(ngModel)]="language.from">
-            <option value="en">英文</option>
-            <option value="zh-CN">中文</option>
+            <option *ngFor="let item of languageData" [value]="item.key">
+                {{item.name}}
+            </option>
         </select>
         <button (click)="toggleFromAndTo()" class="translate-language-btn">
-            <img src="assets/img/ter.svg" alt="">
+            <svg-icon url="assets/img/ter.svg"></svg-icon>
         </button>
         <select placeholder="目标" [(ngModel)]="language.to">
-            <option value="en">英文</option>
-            <option value="zh-CN">中文</option>
+            <option *ngFor="let item of languageData" [value]="item.key">
+                {{item.name}}
+            </option>
         </select>
     </div>
 
     <div class="input-text">
-        <input [(ngModel)]="needTranlstate" placeholder="原来">
+        <input [(ngModel)]="needTranlstate" (keyup.enter)="test($event)" placeholder="原来">
         <button (click)="test($event)" class="search-btn">搜索</button>
     </div>
 
 
-    <div class="trans" *ngIf="translate">
-        <h4>翻译:</h4>
+    <div class="trans">
+        <!--<h4>翻译:</h4>
         <div *ngIf="translate">
             <span *ngFor="let item of translate.sentences">
                 {{item.trans}}
             </span>
-        </div>
+        </div>-->
+        <translate [data]="translate"></translate>
     </div>
     <br>
-    <a [href]="'http://translate.google.cn/?source=osdd#auto/' + language.to + '/' + needTranlstate" target="_blank">更多</a>
+    <div>
+        <a class="more-link" [href]="'http://translate.google.cn/?source=osdd#auto/' + language.to + '/' + needTranlstate" target="_blank">更多>></a>
+    </div>
 </article>

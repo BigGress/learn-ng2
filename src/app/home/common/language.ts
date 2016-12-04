@@ -1,0 +1,448 @@
+export const languageData = [{
+    "key": "af",
+    "name": "Afrikaans"
+}, {
+    "key": "ak",
+    "name": "Akan"
+}, {
+    "key": "sq",
+    "name": "Albanian"
+}, {
+    "key": "am",
+    "name": "Amharic"
+}, {
+    "key": "ar",
+    "name": "Arabic"
+}, {
+    "key": "hy",
+    "name": "Armenian"
+}, {
+    "key": "az",
+    "name": "Azerbaijani"
+}, {
+    "key": "eu",
+    "name": "Basque"
+}, {
+    "key": "be",
+    "name": "Belarusian"
+}, {
+    "key": "bem",
+    "name": " Bemba"
+}, {
+    "key": "bn",
+    "name": "Bengali"
+}, {
+    "key": "bh",
+    "name": "Bihari"
+}, {
+    "key": "xx-bork",
+    "name": " Bork, bork, bork!"
+}, {
+    "key": "bs",
+    "name": "Bosnian"
+}, {
+    "key": "br",
+    "name": "Breton"
+}, {
+    "key": "bg",
+    "name": "Bulgarian"
+}, {
+    "key": "km",
+    "name": "Cambodian"
+}, {
+    "key": "ca",
+    "name": "Catalan"
+}, {
+    "key": "chr",
+    "name": " Cherokee"
+}, {
+    "key": "ny",
+    "name": "Chichewa"
+}, {
+    "key": "zh-CN",
+    "name": " Chinese (Simplified)"
+}, {
+    "key": "zh-TW",
+    "name": " Chinese (Traditional)"
+}, {
+    "key": "co",
+    "name": "Corsican"
+}, {
+    "key": "hr",
+    "name": "Croatian"
+}, {
+    "key": "cs",
+    "name": "Czech"
+}, {
+    "key": "da",
+    "name": "Danish"
+}, {
+    "key": "nl",
+    "name": "Dutch"
+}, {
+    "key": "xx-elmer",
+    "name": "Elmer Fudd"
+}, {
+    "key": "en",
+    "name": "English"
+}, {
+    "key": "eo",
+    "name": "Esperanto"
+}, {
+    "key": "et",
+    "name": "Estonian"
+}, {
+    "key": "ee",
+    "name": "Ewe"
+}, {
+    "key": "fo",
+    "name": "Faroese"
+}, {
+    "key": "tl",
+    "name": "Filipino"
+}, {
+    "key": "fi",
+    "name": "Finnish"
+}, {
+    "key": "fr",
+    "name": "French"
+}, {
+    "key": "fy",
+    "name": "Frisian"
+}, {
+    "key": "gaa",
+    "name": " Ga"
+}, {
+    "key": "gl",
+    "name": "Galician"
+}, {
+    "key": "ka",
+    "name": "Georgian"
+}, {
+    "key": "de",
+    "name": "German"
+}, {
+    "key": "el",
+    "name": "Greek"
+}, {
+    "key": "gn",
+    "name": "Guarani"
+}, {
+    "key": "gu",
+    "name": "Gujarati"
+}, {
+    "key": "xx-hacker",
+    "name": " Hacker"
+}, {
+    "key": "ht",
+    "name": "Haitian Creole"
+}, {
+    "key": "ha",
+    "name": "Hausa"
+}, {
+    "key": "haw",
+    "name": " Hawaiian"
+}, {
+    "key": "iw",
+    "name": "Hebrew"
+}, {
+    "key": "hi",
+    "name": "Hindi"
+}, {
+    "key": "hu",
+    "name": "Hungarian"
+}, {
+    "key": "is",
+    "name": "Icelandic"
+}, {
+    "key": "ig",
+    "name": "Igbo"
+}, {
+    "key": "id",
+    "name": "Indonesian"
+}, {
+    "key": "ia",
+    "name": "Interlingua"
+}, {
+    "key": "ga",
+    "name": "Irish"
+}, {
+    "key": "it",
+    "name": "Italian"
+}, {
+    "key": "ja",
+    "name": "Japanese"
+}, {
+    "key": "jw",
+    "name": "Javanese"
+}, {
+    "key": "kn",
+    "name": "Kannada"
+}, {
+    "key": "kk",
+    "name": "Kazakh"
+}, {
+    "key": "rw",
+    "name": "Kinyarwanda"
+}, {
+    "key": "rn",
+    "name": "Kirundi"
+}, {
+    "key": "xx-klingon",
+    "name": "Klingon"
+}, {
+    "key": "kg",
+    "name": "Kongo"
+}, {
+    "key": "ko",
+    "name": "Korean"
+}, {
+    "key": "kri",
+    "name": " Krio (Sierra Leone)"
+}, {
+    "key": "ku",
+    "name": "Kurdish"
+}, {
+    "key": "ckb",
+    "name": " Kurdish (Soranî)"
+}, {
+    "key": "ky",
+    "name": "Kyrgyz"
+}, {
+    "key": "lo",
+    "name": "Laothian"
+}, {
+    "key": "la",
+    "name": "Latin"
+}, {
+    "key": "lv",
+    "name": "Latvian"
+}, {
+    "key": "ln",
+    "name": "Lingala"
+}, {
+    "key": "lt",
+    "name": "Lithuanian"
+}, {
+    "key": "loz",
+    "name": " Lozi"
+}, {
+    "key": "lg",
+    "name": "Luganda"
+}, {
+    "key": "ach",
+    "name": " Luo"
+}, {
+    "key": "mk",
+    "name": "Macedonian"
+}, {
+    "key": "mg",
+    "name": "Malagasy"
+}, {
+    "key": "ms",
+    "name": "Malay"
+}, {
+    "key": "ml",
+    "name": "Malayalam"
+}, {
+    "key": "mt",
+    "name": "Maltese"
+}, {
+    "key": "mi",
+    "name": "Maori"
+}, {
+    "key": "mr",
+    "name": "Marathi"
+}, {
+    "key": "mfe",
+    "name": " Mauritian Creole"
+}, {
+    "key": "mo",
+    "name": "Moldavian"
+}, {
+    "key": "mn",
+    "name": "Mongolian"
+}, {
+    "key": "sr-ME",
+    "name": " Montenegrin"
+}, {
+    "key": "ne",
+    "name": "Nepali"
+}, {
+    "key": "pcm",
+    "name": " Nigerian Pidgin"
+}, {
+    "key": "nso",
+    "name": " Northern Sotho"
+}, {
+    "key": "no",
+    "name": "Norwegian"
+}, {
+    "key": "nn",
+    "name": "Norwegian (Nynorsk)"
+}, {
+    "key": "oc",
+    "name": "Occitan"
+}, {
+    "key": "or",
+    "name": "Oriya"
+}, {
+    "key": "om",
+    "name": "Oromo"
+}, {
+    "key": "ps",
+    "name": "Pashto"
+}, {
+    "key": "fa",
+    "name": "Persian"
+}, {
+    "key": "xx-pirate",
+    "name": " Pirate"
+}, {
+    "key": "pl",
+    "name": "Polish"
+}, {
+    "key": "pt-BR",
+    "name": " Portuguese (Brazil)"
+}, {
+    "key": "pt-PT",
+    "name": " Portuguese (Portugal)"
+}, {
+    "key": "pa",
+    "name": "Punjabi"
+}, {
+    "key": "qu",
+    "name": "Quechua"
+}, {
+    "key": "ro",
+    "name": "Romanian"
+}, {
+    "key": "rm",
+    "name": "Romansh"
+}, {
+    "key": "nyn",
+    "name": " Runyakitara"
+}, {
+    "key": "ru",
+    "name": "Russian"
+}, {
+    "key": "gd",
+    "name": "Scots Gaelic"
+}, {
+    "key": "sr",
+    "name": "Serbian"
+}, {
+    "key": "sh",
+    "name": "Serbo-Croatian"
+}, {
+    "key": "st",
+    "name": "Sesotho"
+}, {
+    "key": "tn",
+    "name": "Setswana"
+}, {
+    "key": "crs",
+    "name": " Seychellois Creole"
+}, {
+    "key": "sn",
+    "name": "Shona"
+}, {
+    "key": "sd",
+    "name": "Sindhi"
+}, {
+    "key": "si",
+    "name": "Sinhalese"
+}, {
+    "key": "sk",
+    "name": "Slovak"
+}, {
+    "key": "sl",
+    "name": "Slovenian"
+}, {
+    "key": "so",
+    "name": "Somali"
+}, {
+    "key": "es",
+    "name": "Spanish"
+}, {
+    "key": "es-419",
+    "name": "Spanish (Latin American)"
+}, {
+    "key": "su",
+    "name": "Sundanese"
+}, {
+    "key": "sw",
+    "name": "Swahili"
+}, {
+    "key": "sv",
+    "name": "Swedish"
+}, {
+    "key": "tg",
+    "name": "Tajik"
+}, {
+    "key": "ta",
+    "name": "Tamil"
+}, {
+    "key": "tt",
+    "name": "Tatar"
+}, {
+    "key": "te",
+    "name": "Telugu"
+}, {
+    "key": "th",
+    "name": "Thai"
+}, {
+    "key": "ti",
+    "name": "Tigrinya"
+}, {
+    "key": "to",
+    "name": "Tonga"
+}, {
+    "key": "lua",
+    "name": " Tshiluba"
+}, {
+    "key": "tum",
+    "name": " Tumbuka"
+}, {
+    "key": "tr",
+    "name": "Turkish"
+}, {
+    "key": "tk",
+    "name": "Turkmen"
+}, {
+    "key": "tw",
+    "name": "Twi"
+}, {
+    "key": "ug",
+    "name": "Uighur"
+}, {
+    "key": "uk",
+    "name": "Ukrainian"
+}, {
+    "key": "ur",
+    "name": "Urdu"
+}, {
+    "key": "uz",
+    "name": "Uzbek"
+}, {
+    "key": "vi",
+    "name": "Vietnamese"
+}, {
+    "key": "cy",
+    "name": "Welsh"
+}, {
+    "key": "wo",
+    "name": "Wolof"
+}, {
+    "key": "xh",
+    "name": "Xhosa"
+}, {
+    "key": "yi",
+    "name": "Yiddish"
+}, {
+    "key": "yo",
+    "name": "Yoruba"
+}, {
+    "key": "zu",
+    "name": "Zulu"
+}]

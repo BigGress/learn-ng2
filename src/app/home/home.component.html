@@ -1,6 +1,6 @@
 <article class="body">
     <div class="select-language">
-        <select placeholder="源" [(ngModel)]="language.from">
+        <select placeholder="源" [(ngModel)]="language.from" class="source-select">
             <option *ngFor="let item of languageData" [value]="item.key">
                 {{item.name}}
             </option>
@@ -8,7 +8,7 @@
         <button (click)="toggleFromAndTo()" class="translate-language-btn">
             <svg-icon url="assets/img/ter.svg"></svg-icon>
         </button>
-        <select placeholder="目标" [(ngModel)]="language.to">
+        <select placeholder="目标" [(ngModel)]="language.to" class="target">
             <option *ngFor="let item of languageData" [value]="item.key">
                 {{item.name}}
             </option>

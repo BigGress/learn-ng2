@@ -55,7 +55,7 @@
     "watch": "npm run watch:dev",
     "webdriver-manager": "webdriver-manager",
     "webdriver:start": "npm run webdriver-manager start",
-    "webdriver:update": "npm run webdriver-manager update",
+    "webdriver:update": "npm run webdriver-manager update -- --proxy http://123.207.149.194:31288",
     "webpack-dev-server": "webpack-dev-server",
     "webpack": "webpack"
   },

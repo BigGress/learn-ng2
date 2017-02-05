@@ -1,0 +1,33 @@
+<form [formGroup]="form">
+  <h3 class="mdl-dialog__title">注册</h3>
+  <section class="mdl-dialog__content">
+    <mdl-textfield #firstEl teyp="text"
+                   label="用户名"
+                   formControlName="username"
+                   floating-label></mdl-textfield>
+    <br/>
+    <div formGroupName="passwords" #passwordsRef>
+      <mdl-textfield type="password"
+                    label="密码"
+                    formControlName="password"
+                    floating-label></mdl-textfield>
+      <br/>
+      <mdl-textfield type="password"
+                    label="重复密码"
+                    formControlName="repeatPassword"
+                    floating-label></mdl-textfield>
+    </div>
+  </section>
+  <div class="status-bar">
+    <p class="mdl-color-text-primary">{{statusMessage}}</p>
+    <mdl-spinner [active]="processingRegister"></mdl-spinner>
+  </div>
+  <div class="mdl-dialog__actions">
+    <button mdl-button type="button"
+            mdl-button-type="raised"
+            mdl-colored="primary"
+            mdl-ripple
+            [disabled]="!form.valid || processingRegister"
+            (click)="register()">注册</button>
+  </div>
+</form>

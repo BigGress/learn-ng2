@@ -1,0 +1,4 @@
+<!--<input type="checkbox" (click)="toggleTodo()" [checked]="isChecked">-->
+<mdl-icon-toggle [mdl-ripple]="true" (click)="toggleTodo()" [(ngModel)]="isChecked">check_circle</mdl-icon-toggle>
+<span>{{todoDesc}}</span>
+<button (click)="deleteTodo()">&#215;</button>

@@ -1,0 +1,12 @@
+<section class="main" *ngIf="todos.length">
+  <input type="checkbox" class="toggle-all" (click)="toggleAll()">
+  <!--<mdl-icon-toggle class="toggle-all" [mdl-ripple]="true" (click)="toggleAll()">check_circle</mdl-icon-toggle>-->
+  <ul class="todo-list">
+    <li *ngFor="let item of todos">
+      <app-todo-item [todoDesc]="item.desc"
+                     [isChecked]="item.completed"
+                     (onRemoveTriggered)="onRemoveTriggered(item)"
+                     (onToggleTriggered)="onToggleTriggered(item)"></app-todo-item>
+    </li>
+  </ul>
+</section>

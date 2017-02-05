@@ -1,0 +1,46 @@
+{
+  "todos": [
+    {
+      "completed": false,
+      "desc": "dfdsaf",
+      "id": "d1fc4cf4-e4a2-8a35-65fa-226ee8e80ac1",
+      "userId": 1
+    },
+    {
+      "id": "d1fc4cf4-e4a2-8a35-65fa-226ee8e80acb",
+      "desc": "dfdsaf",
+      "completed": false,
+      "userId": 2
+    },
+    {
+      "id": "98aca935-f317-7fdb-65ad-13346aa7113b",
+      "desc": "sdfdsa",
+      "completed": false,
+      "userId": 3
+    },
+    {
+      "id": "9ec58b18-9179-0855-405d-57b0c4d523a7",
+      "desc": "",
+      "completed": false,
+      "userId": 1
+    },
+    {
+      "id": "63df58bc-2f84-d8b1-190a-6288af56665f",
+      "desc": "asdsadsa",
+      "completed": false,
+      "userId": 0
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123"
+    },
+    {
+      "username": "admin1",
+      "password": "admin1",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+<section
+  class="mdl-grid mdl-grid--no-spacing login-container"
+  [ngStyle]="{'background-image': 'url(' + photo + ')'}">
+  <mdl-layout-spacer
+    class="mdl-cell mdl-cell--8-col mdl-cell--4-col-tablet mdl-cell--hide-phone">
+  </mdl-layout-spacer>
+  <form #fromRef="ngForm" (ngSubmit)="onSubmit(fromRef.value,fromRef);"
+        class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--4-col-phone login-form">
+    <mdl-textfield type="text" label="用户名" name="username"
+                   floating-label required [(ngModel)]="username"
+                   #usernameRef="ngModel"></mdl-textfield>
+    <!--<fieldset ngModelGroup="login">-->
+    <!--<input [(ngModel)]="username" type="text" minlength="3"
+            name="username" placeholder="请输入用户名"
+          #usernameRef="ngModel" required/>-->
+    <!--<div *ngIf="usernameRef.errors?.required">必填</div>
+    <div *ngIf="usernameRef.errors?.minlength">长度大于3</div>-->
+    <!--<input [(ngModel)]="password" type="password"
+            name="password" placeholder="请输入密码"
+          #passwordRef="ngModel" required/>-->
+    <mdl-textfield type="password" label="输入密码" name="password"
+                   floating-label required [(ngModel)]="password"
+                   #passwordRef="ngModel"></mdl-textfield>
+      <!--<div *ngIf="passwordRef.errors?.required">必填</div>-->
+    <div *ngIf="auth?.hasError">{{auth.errMsg}}</div>
+    <!--</fieldset>-->
+    <!--<fieldset ngModelGroup="test">
+      <input [(ngModel)]="nametest" type="text" name="gotest"/>
+    </fieldset>-->
+    <br />
+    <button mdl-button-type="raised" mdl-button
+            mdl-colored="primary"
+            mdl-ripple
+            [@loginState]="loginBtnState"
+            (mouseenter)="toggleBtnState(true)"
+            (mouseleave)="toggleBtnState(false)"
+            type="submit">登陆</button>
+
+    <button type="button"
+        mdl-button
+        mdl-colored="accent"
+        (click)="register($event)">
+        注册
+      </button>
+  </form>
+  <mdl-layout-spacer></mdl-layout-spacer>
+</section>

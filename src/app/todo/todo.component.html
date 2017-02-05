@@ -1,0 +1,22 @@
+<section class="todoapp">
+<app-todo-header placeholder="输入任务"
+                 delay="300"
+                 (textChanges)="changeDesInput($event)"
+                 (onEnterUp)="addTodo(isEnter)"></app-todo-header>
+<!--<section class="main" *ngIf="todos.length">
+  <input type="checkbox" class="toggle-all">
+  <ul class="todo-list">
+    <li *ngFor="let item of todos">
+      <input type="checkbox" (click)="toggleTodo(item)" [checked]="item.completed">
+      <span>{{item.desc}}</span>
+      <button (click)="deleteTodo($event,item)">&#215;</button>
+    </li>
+  </ul>
+</section>-->
+<app-todo-list [todos]="todos"
+               (onRemoveTodo)="deleteTodo($event)"
+               (onToggleTodo)="toggleTodo($event)"
+               (onToggleAllTodo)="toggleAll()"></app-todo-list>
+<app-todo-footer [itemCount]="todos?.length"
+                 (onClearAllCompleted)="clearAllCompleted()"></app-todo-footer>
+</section>

@@ -1,0 +1,14 @@
+<h2>简单sku表单</h2>
+
+<form #f="ngForm" (ngSubmit)="submit(f)">
+    <div>
+        <label for="skuInput">SKU</label>
+        <input type="text" name="sku" id="skuInput" placeholder="sku" ngModel/>
+    </div>
+    <div>
+        <label>名字</label>
+        <input type="text" name="name" placeholder="名称" ngModel/>
+    </div>
+
+    <button type="submit">submit</button>
+</form>

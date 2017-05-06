@@ -1,0 +1,13 @@
+<form [formGroup]="myForm" (ngSubmit)="submit(myForm)">
+    <div>
+        <label>sku</label>
+        <input type="text" name="sku" [formControl]="myForm.controls.sku" pattern="/\w+/g" />
+    </div>
+    <div *ngIf="sku.hasError('required')">
+        字段无效
+    </div>
+    <div *ngIf="sku.hasError('pattern')">
+        123
+    </div>
+    <button type="submit">abcSubmit</button>
+</form>

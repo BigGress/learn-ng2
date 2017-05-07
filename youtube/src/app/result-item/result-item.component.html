@@ -1,0 +1,8 @@
+<div>
+    <img [src]="video.thumbnailUrl || '/assets/img/default.svg'" />
+</div>
+<h2>{{video.title}}</h2>
+<p>{{video.description}}</p>
+<p>
+    <a [href]="video.videoUrl" class="button" target="_blank">Watch</a>
+</p>

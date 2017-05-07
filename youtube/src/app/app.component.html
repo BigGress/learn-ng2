@@ -1,0 +1,8 @@
+<h1>
+    {{title}}
+</h1>
+<app-search-box></app-search-box>
+
+<div class="video-list">
+    <app-result-item [video]="video" *ngFor="let video of videos"></app-result-item>
+</div>

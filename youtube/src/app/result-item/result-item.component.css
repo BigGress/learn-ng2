@@ -1,0 +1,27 @@
+img {
+    width: 100%;
+    margin-top: 16px;
+}
+
+h2 {
+    margin: 8px 0;
+    width: 100%;
+}
+
+p {
+    width: 100%;
+}
+
+.button {
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, .12);
+    border-radius: 4px;
+    padding: 2px 4px;
+    color: rgb(88, 123, 245);
+    transition: all .2s ease;
+}
+
+.button:active {
+    color: rgb(255, 255, 255);
+    background: rgb(88, 123, 245);
+}

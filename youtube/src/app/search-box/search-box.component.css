@@ -1,0 +1,16 @@
+input {
+    width: calc(100% - 21px);
+    font-size: 16px;
+    line-height: 32px;
+    padding: 0 8px;
+    margin-right: 8px;
+    border: 1px solid rgba(0, 0, 0, .12);
+    border-radius: 4px;
+    outline: none;
+    transition: all .2s ease;
+}
+
+input:hover,
+input:focus {
+    border-color: rgb(100, 200, 250);
+}

@@ -1,0 +1,11 @@
+{
+    "/api": {
+        "target": "http://music.163.com",
+        "pathRewrite": {
+            "^/api": ""
+        },
+        "changeOrigin": true,
+        "secure": false
+    }
+
+}

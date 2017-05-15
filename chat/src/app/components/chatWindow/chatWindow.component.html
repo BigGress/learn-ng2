@@ -1,0 +1,20 @@
+<div class="chat-window" *ngIf="cUser">
+    <header>
+        {{cUser.name}}
+    </header>
+    <ul *ngIf="self" id="message-list">
+        <li *ngFor="let message of messages | async" class="chat-item" [class.right]="message.author.id == self.id">
+            <h5>{{message.author.name}}</h5>
+            <span>{{message.content}}</span>
+        </li>
+    </ul>
+    <form #chatForm="ngForm" class="chat-form" (ngSubmit)="sendMessage(message)" *ngIf="self">
+        <input type="text" name="message" #message placeholder="内容" />
+        <button type="submit" class="button">send</button>
+    </form>
+
+    <form #userForm="ngForm" class="user-form" *ngIf="!self" (ngSubmit)="login(name.value)">
+        <input type="text" name="name" #name placeholder="请登陆" />
+        <button type="submit" class="button">login</button>
+    </form>
+</div>

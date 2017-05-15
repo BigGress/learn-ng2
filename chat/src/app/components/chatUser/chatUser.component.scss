@@ -1,0 +1,27 @@
+.user-box {
+    margin: 8px;
+    width: 400px;
+    li {
+        font-size: 0;
+        span {
+            font-size: 14px;
+        }
+        input {
+            font-size: 16px;
+            padding: 2px;
+            margin-right: 8px;
+        }
+        form {
+            margin-bottom: 8px;
+            button {
+                width: 40px;
+                border: none;
+                border-radius: 4px;
+            }
+        }
+    }
+    #user-form {
+        display: flex;
+        flex-direction: row;
+    }
+}

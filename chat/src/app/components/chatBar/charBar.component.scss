@@ -1,0 +1,29 @@
+$iconSize: 48px;
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 1px 2px #ddd;
+    padding: 8px;
+    .left {
+        .icon {
+            display: block;
+            border-radius: 50%;
+            background-color: #03A9F4;
+            width: $iconSize;
+            height: $iconSize;
+            line-height: $iconSize;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    .flex {
+        flex: 100%;
+        width: 100%;
+    }
+    .message-btn {
+        border: none;
+    }
+}

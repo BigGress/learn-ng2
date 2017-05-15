@@ -1,0 +1,14 @@
+<div class="user-box">
+    <ul class="user-list">
+        <li class="user-item">
+            <form #userForm="ngForm" (ngSubmit)="addUser(name.value)" id="user-form">
+                <input type="text" name="name" placeholder="用户名" #name/>
+                <button type="submit" class="button">add</button>
+            </form>
+        </li>
+        <li *ngFor="let user of service.users | async" (click)="setCurrentUser(user)">
+            <span>{{user.name}}</span>
+            <span class="icon" *ngIf="user.hasNew">&#9679;</span>
+        </li>
+    </ul>
+</div>

@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-header {
+    display: flex;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .12);
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.nav-header div {
+    background: green;
+    line-height: 33px;
+    color: #fff;
+    border-radius: 2px;
+    padding-left: 8px;
+    display: flex;
+}
+
+.nav-header div span {
+    margin-right: 8px;
+}
+
+.nav-header div .badge {
+    color: green;
+    background: #fff;
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+    margin-top: calc(16.5px - 0.6rem);
+    line-height: 1.25rem;
+    font-weight: 900;
+}
+
+.threads {
+    margin: 16px;
+}
+
+.threads li {
+    list-style: none;
+    display: flex;
+}
+
+.threads li .image {
+    margin-right: 8px;
+    vertical-align: middle;
+}

@@ -1,0 +1,11 @@
+<ul class="threads">
+    <li *ngFor="let thread of threads" (click)="handleThreadClicked(thread)">
+        <div class="image">
+            用户头像
+        </div>
+        <div>
+            <h5>{{thread.name}}</h5>
+            <p>{{thread.messages[thread.messages.length - 1].text}}</p>
+        </div>
+    </li>
+</ul>

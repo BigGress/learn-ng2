@@ -1,0 +1,17 @@
+<div class="message-box">
+    <ul>
+        <li *ngFor="let message of currentThread.messages">
+            <div>
+                用户头衔
+            </div>
+            <div>
+                <h4>{{message.thread.name}}</h4>
+                <p>{{message.text}}</p>
+            </div>
+        </li>
+    </ul>
+</div>
+<div>
+    <input type="text" [(ngModel)]="drafmessage.text" (keydown.enter)="sendMessage()" />
+    <button (click)="sendMessage()">send</button>
+</div>
